@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button onclick="merhaba()">Merhaba</button>
+    <div id="root"></div>
+    <script>
+      function merhaba() {
+        const root = document.getElementById("root");
+        // <h1>Merhaba</h1>
+        const el = document.createElement("h1");
+        el.textContent = "Merhaba";
+        root.appendChild(el);
+      }
+    </script>
+  </body>
+</html>
